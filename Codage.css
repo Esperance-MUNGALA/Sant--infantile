@@ -1,0 +1,192 @@
+/* Style de la 1ere section (bande en bleu) */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+.section-img {
+    background-color: rgb(30, 152, 234);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Style de la 1ere bande (coté droit) */
+.image-coté {
+    list-style: none;
+    margin-right: 150px; 
+}
+/* Style des 1ere icones (gauche) */
+.first-icones {
+    align-items: center;
+    margin-left: 150px;
+}
+.icones-gauche {
+   list-style: none;
+    display: flex;
+    gap: 30px;  
+}
+/* Style du header (bande en blanc) */
+.head-propriete {
+    margin-top: 30px;
+    margin-bottom: -15px;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px; /* volume du header */
+}
+/* Style du header (coté gauche) */
+.santé {
+    display: flex;
+    gap: 5px;
+}
+h2 {
+    font-size: 20px;
+}
+span {
+    color:rgb(30, 152, 234) ;
+    }
+/* Style du header (coté droit) */
+.coordonnees {
+    list-style: none;
+    display: flex;
+    right: 0;
+}
+.pi {
+    padding-left: 20px;
+}
+/* Style de la 2è section (milieu de page) */
+.image-centrale {
+    height: auto;
+    width: 100% ;
+}
+.image {
+    margin-top: -220px;
+}
+/* Style des écrits de l’image */
+.coeur {
+    text-align: center;
+    padding-top: 15%;
+}
+h3 {
+    font-size: 50px;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: -500px; /* pour remonter le texte a l’interieur de l’image */
+    margin-left: 43%; /* texte H décalé à droite */
+    margin-bottom: 4%;
+}
+.para {
+    font-size: 20px;
+    color: rgb(53, 51, 51);
+    margin-top: 0%;
+    padding-left: 650px; /* texte P décalé à droite */
+    margin-bottom: 2%;
+}
+.bicoeur {
+    display: flex;
+    color: white;
+    gap: 20px;
+    padding-left: 62%; /* textes P identiques décalés à droite */
+    margin-top: 1%;
+}
+.para1 {
+    background-color:rgb(30, 152, 234);
+    padding: 3%;
+}
+.para2 {
+    background-color: black;
+    padding: 3%;
+}
+/* Style du footer (les cartes) */
+.cartes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    justify-items: center;
+    margin-left: 220px;
+    padding-top: 16%; /* pour descendre les cartes hors de l’image */
+    margin-bottom: 3%;
+}
+.carte1 {
+    width: 385px;
+    height: 100px;
+    border: 1px solid rgb(30, 152, 234);
+    background-color: rgb(30, 152, 234);
+    color: white;
+    margin-bottom: 3%;;
+}
+.carte2 {
+    width: 365px;
+    height: 100px;
+    border: 1px solid rgb(37, 127, 186);
+    background-color: rgb(37, 127, 186);
+    color: white;
+}
+.carte3 {
+    width: 385px;
+    height: 100px;
+    border: 1px solid rgb(30, 152, 234);
+    background-color: rgb(30, 152, 234);
+    color: white;
+} 
+.carte4 {
+    width: 360px;
+    height: 100px;
+    border: 1px solid rgb(37, 127, 186);
+    background-color: rgb(37, 127, 186);
+    color: white;
+}
+h4 {
+    padding-left: 15px;
+    margin-bottom: 10px; /* espace entre H et P */
+    margin-top: 5px; /* espace entre image et 1er texte in card */
+}
+p {
+    padding-left: 15px;
+}
+.cartes img {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+/* RESPONSIVITE */
+@media(max-width:768px) {
+    .section-img {
+        text-align: center;
+    }
+.head-propriete {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+    padding-top: 0;
+}
+.coordonnees {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* petit espace entre mail et image */
+}
+.image-centrale {
+    flex-direction: column;
+    align-items: center;
+}
+.coeur {
+    flex-direction: column;
+    padding-left: 5px;
+}
+.bicoeur{
+    flex-direction: column;
+    text-align: center;
+}
+.cartes {
+    flex-direction: column;
+    align-items: center;
+}
+}
